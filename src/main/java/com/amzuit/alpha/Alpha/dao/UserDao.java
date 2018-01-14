@@ -10,6 +10,6 @@ public class UserDao {
     UserRepository userRepository;
 
     public User createUpdate(User user) {
-
+        return userRepository.save(user);
     }
 }
